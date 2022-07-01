@@ -32,5 +32,5 @@ BL jump to main function in C
 ## Running 
 We need to specify the machine because there is no default one
 ```
-qemu-system-arm -M versatilepb -cpu arm1176 -nographic -kernel kernel.elf
+qemu-system-arm -M versatilepb -cpu arm1176 -device virtio-gpu-pci -kernel kernel.elf
 ```
